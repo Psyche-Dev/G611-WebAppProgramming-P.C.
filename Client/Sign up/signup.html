@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel= "stylesheet" href="/Design/css/bootstrap.css"/>
+    <title>Sign up</title>
 </head>
 <body>
-    
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Tech Hub Forums Romania</a>        
+          <a class="btn btn-edit btn-sm pull-right" href="/Design/forumds.html">Forum</a>
+          <a class="btn btn-edit btn-sm pull-right" href="/Design/newsds.html">News</a>
+          <a class="btn btn-edit btn-sm pull-right" href="/Client/Sign in/signin.html">Sign in</a>
+        </div>
+      </nav>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input  class="form-control" id="usernamesignup" aria-describedby="emailHelp" placeholder="Enter Username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email Address</label>
+            <input type="email" class="form-control" id="Emailsignup" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="passwrodsignup" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree to the ToS</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </body>
 </html>
