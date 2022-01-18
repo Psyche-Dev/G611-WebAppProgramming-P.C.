@@ -4,4 +4,10 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'secretkey123'
 
+    from .views import views
+    from .authy import authy
+
+    app.register_blueprint(views, url_prefix='/')
+    app.register_blueprint(authy, url_prefix='/')
+
     return app
