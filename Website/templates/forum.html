@@ -3,6 +3,16 @@
 {% block title %} Forum {% endblock %} 
 
 {% block maincontent %}
+<br>
+<form method="POST">
+  <div class="d-grid gap-2 col-3 mx-auto float-form">
+    <button type="submit" class="btn btn-primary">Create Thread</button>
+    <br>
+    <textarea name="forumpost" id="forumpost" class="form-control" placeholder="Your topic here" style="height: 100px"></textarea>
+  </div>
+</form>
+
+<br>
 <div class="row d-flex justify-content-center">
     <div class="col-12 col-xl-9">
       <h2 class="h4 category mb-0 p-4 rounded-top text-light">Category</h2>
