@@ -34,6 +34,7 @@ def signout():
 @authy.route('/signup', methods=['GET','POST'])
 def signup():
     if request.method == 'POST':
+        
         username = request.form.get('username')
         email = request.form.get('email')
         password = request.form.get('password')
@@ -48,7 +49,7 @@ def signup():
         else:
             usersin = User(email=email, username=username, password=generate_password_hash(password, method='sha256'))
             db.session.add(usersin)
-            db.session.commit()
+            db.session.commit( )
 
             flash('Account created', category='success')
             login_user(usersin, remember=True)
